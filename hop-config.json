@@ -311,12 +311,8 @@
       "purpose" : "Development",
       "projectName" : "live_repo",
       "configurationFiles" : [ "${PROJECT_HOME}/hop-live-dev-config.json" ]
-    }, {
-      "name" : "principal",
-      "purpose" : "Production",
-      "projectName" : "principal",
-      "configurationFiles" : [ "/opt/projetos/principal/principal-config.json" ]
-    } ],
+    }
+],
     "projectLifecycles" : [ ]
   },
   "explorer-perspective" : {
