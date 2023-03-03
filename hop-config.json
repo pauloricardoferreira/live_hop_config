@@ -310,19 +310,13 @@
       "name" : "hop-live-dev",
       "purpose" : "Development",
       "projectName" : "live_repo",
-<<<<<<< HEAD
       "configurationFiles" : [ "${PROJECT_HOME}/hop-live-dev-config.json" ]
-    }
-],
-=======
-      "configurationFiles" : [ "/opt/projetos/live_hop/hop-live-dev-config.json" ]
     }, {
       "name" : "usina-prd",
       "purpose" : "Production",
       "projectName" : "usina",
       "configurationFiles" : [ "/opt/projetos/usina/usina-prd-config.json" ]
     } ],
->>>>>>> d667c60 (update)
     "projectLifecycles" : [ ]
   },
   "explorer-perspective" : {
