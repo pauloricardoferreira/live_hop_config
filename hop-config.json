@@ -305,12 +305,12 @@
       "name" : "hop-live-prd",
       "purpose" : "Production",
       "projectName" : "live_repo",
-      "configurationFiles" : [ "${PROJECT_HOME}/hop-live-prd-config.json" ]
+      "configurationFiles" : [ "/opt/projetos/live_hop/hop-live-prd-config.json" ]
     }, {
       "name" : "hop-live-dev",
       "purpose" : "Development",
       "projectName" : "live_repo",
-      "configurationFiles" : [ "${PROJECT_HOME}/hop-live-dev-config.json" ]
+      "configurationFiles" : [ "/opt/projetos/live_hop/hop-live-dev-config.json" ]
     }, {
       "name" : "usina-prd",
       "purpose" : "Production",
