@@ -270,10 +270,10 @@
     "enabled" : true,
     "projectMandatory" : false,
     "environmentMandatory" : false,
-    "defaultProject" : "",
+    "defaultProject" : "hop_repo",
     "defaultEnvironment" : "",
     "standardParentProject" : null,
-    "standardProjectsFolder" : "",
+    "standardProjectsFolder" : "/opt/projetos",
     "defaultProjectConfigFile" : "project-config.json",
     "projectConfigurations" : [ {
       "projectName" : "hop_repo",
@@ -288,31 +288,41 @@
       "projectHome" : "config/projects/samples",
       "configFilename" : "project-config.json"
     }, {
-      "projectName" : "live_repo",
+      "projectName" : "live_hop",
       "projectHome" : "/opt/projetos/live_hop",
       "configFilename" : "project-config.json"
     }, {
-      "projectName" : "principal",
-      "projectHome" : "/opt/projetos/principal",
+      "projectName" : "usina",
+      "projectHome" : "/opt/projetos/usina",
       "configFilename" : "project-config.json"
     } ],
     "lifecycleEnvironments" : [ {
-      "name" : "hop-repo-prod",
+      "name" : "hop-repo-prd",
       "purpose" : "Production",
       "projectName" : "hop_repo",
-      "configurationFiles" : [ "${PROJECT_HOME}/hop-repo-prod-config.json" ]
+      "configurationFiles" : [ "/opt/projetos/hop_repo/hop-repo-prd-config.json" ]
     }, {
       "name" : "hop-live-prd",
       "purpose" : "Production",
       "projectName" : "live_repo",
-      "configurationFiles" : [ "/opt/projetos/live_hop/hop-live-prd-config.json" ]
+      "configurationFiles" : [ "${PROJECT_HOME}/hop-live-prd-config.json" ]
     }, {
       "name" : "hop-live-dev",
       "purpose" : "Development",
       "projectName" : "live_repo",
+<<<<<<< HEAD
       "configurationFiles" : [ "${PROJECT_HOME}/hop-live-dev-config.json" ]
     }
 ],
+=======
+      "configurationFiles" : [ "/opt/projetos/live_hop/hop-live-dev-config.json" ]
+    }, {
+      "name" : "usina-prd",
+      "purpose" : "Production",
+      "projectName" : "usina",
+      "configurationFiles" : [ "/opt/projetos/usina/usina-prd-config.json" ]
+    } ],
+>>>>>>> d667c60 (update)
     "projectLifecycles" : [ ]
   },
   "explorer-perspective" : {
