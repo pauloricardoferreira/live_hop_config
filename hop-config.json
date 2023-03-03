@@ -270,7 +270,7 @@
     "enabled" : true,
     "projectMandatory" : false,
     "environmentMandatory" : false,
-    "defaultProject" : "hop_repo",
+    "defaultProject" : "default",
     "defaultEnvironment" : "",
     "standardParentProject" : null,
     "standardProjectsFolder" : "/opt/projetos",
