@@ -292,8 +292,8 @@
       "projectHome" : "/opt/projetos/live_hop",
       "configFilename" : "project-config.json"
     }, {
-      "projectName" : "usina",
-      "projectHome" : "/opt/projetos/usina",
+      "projectName" : "UAG1",
+      "projectHome" : "/opt/projetos/UAG1",
       "configFilename" : "project-config.json"
     } ],
     "lifecycleEnvironments" : [ {
@@ -305,17 +305,17 @@
       "name" : "hop-live-prd",
       "purpose" : "Production",
       "projectName" : "live_repo",
-      "configurationFiles" : [ "/opt/projetos/live_hop/hop-live-prd-config.json" ]
+      "configurationFiles" : [ "${PROJECT_HOME}/hop-live-prd-config.json" ]
     }, {
       "name" : "hop-live-dev",
       "purpose" : "Development",
       "projectName" : "live_repo",
       "configurationFiles" : [ "/opt/projetos/live_hop/hop-live-dev-config.json" ]
     }, {
-      "name" : "usina-prd",
+      "name" : "UAG1-PRD",
       "purpose" : "Production",
-      "projectName" : "usina",
-      "configurationFiles" : [ "/opt/projetos/usina/usina-prd-config.json" ]
+      "projectName" : "UAG1",
+      "configurationFiles" : [ "${PROJECT_HOME}/UAG1-PRD-config.json" ]
     } ],
     "projectLifecycles" : [ ]
   },
