@@ -273,7 +273,7 @@
     "defaultProject" : "default",
     "defaultEnvironment" : "",
     "standardParentProject" : null,
-    "standardProjectsFolder" : "config/projects",
+    "standardProjectsFolder" : "/opt/projetos",
     "defaultProjectConfigFile" : "project-config.json",
     "projectConfigurations" : [ {
       "projectName" : "hop_repo",
@@ -305,7 +305,7 @@
       "name" : "hop-live-prd",
       "purpose" : "Production",
       "projectName" : "live_hop",
-      "configurationFiles" : [ "${PROJECT_HOME}/hop-live-prd-config.json" ]
+      "configurationFiles" : [ "/opt/projetos/live_hop/hop-live-prd-config.json" ]
     }, {
       "name" : "hop-live-dev",
       "purpose" : "Development",
