@@ -304,13 +304,13 @@
     }, {
       "name" : "hop-live-prd",
       "purpose" : "Production",
-      "projectName" : "live_repo",
+      "projectName" : "live_hop",
       "configurationFiles" : [ "${PROJECT_HOME}/hop-live-prd-config.json" ]
     }, {
       "name" : "hop-live-dev",
       "purpose" : "Development",
-      "projectName" : "live_repo",
-      "configurationFiles" : [ "/opt/projetos/live_hop/hop-live-dev-config.json" ]
+      "projectName" : "live_hop",
+      "configurationFiles" : [ "${PROJECT_HOME}/hop-live-dev-config.json" ]
     }, {
       "name" : "UAG1-PRD",
       "purpose" : "Production",
