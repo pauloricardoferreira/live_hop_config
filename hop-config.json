@@ -273,7 +273,7 @@
     "defaultProject" : "default",
     "defaultEnvironment" : "",
     "standardParentProject" : null,
-    "standardProjectsFolder" : "/opt/projetos",
+    "standardProjectsFolder" : "config/projects",
     "defaultProjectConfigFile" : "project-config.json",
     "projectConfigurations" : [ {
       "projectName" : "hop_repo",
