@@ -209,7 +209,7 @@
     "description" : "Name of the variable to set so that Nulls are considered while parsing JSON files. If HOP_JSON_INPUT_INCLUDE_NULLS is \"Y\" then nulls will be included (default behavior) otherwise they will not be included"
   } ],
   "googleCloud" : {
-    "serviceAccountKeyFile" : ""
+    "serviceAccountKeyFile" : "/opt/projetos/hop_repo/TESTES/apache-hop-gdrive-service.json"
   },
   "LocaleDefault" : "en_US",
   "dropbox" : {
@@ -260,11 +260,21 @@
     "FontDefaultSize" : "9",
     "FontDefaultStyle" : "0",
     "HideMenuBar" : "Y",
-    "ShowTableViewToolbar" : "Y"
+    "ShowTableViewToolbar" : "Y",
+    "ShowOSLook" : "Y",
+    "BackgroundColorR" : "255",
+    "BackgroundColorG" : "255",
+    "BackgroundColorB" : "255",
+    "GraphColorR" : "255",
+    "GraphColorG" : "255",
+    "GraphColorB" : "255",
+    "TabColorR" : "240",
+    "TabColorG" : "240",
+    "TabColorB" : "240"
   },
   "googleDrive" : {
-    "credentialsFile" : "",
-    "tokensFolder" : ""
+    "credentialsFile" : "/opt/projetos/hop_repo/TESTES/client_secret.json",
+    "tokensFolder" : "/opt/projetos/hop_repo/TESTES/"
   },
   "projectsConfig" : {
     "enabled" : true,
@@ -272,7 +282,7 @@
     "environmentMandatory" : false,
     "defaultProject" : "default",
     "defaultEnvironment" : "",
-    "standardParentProject" : null,
+    "standardParentProject" : "",
     "standardProjectsFolder" : "/opt/projetos",
     "defaultProjectConfigFile" : "project-config.json",
     "projectConfigurations" : [ {
@@ -316,6 +326,11 @@
       "purpose" : "Production",
       "projectName" : "UAG",
       "configurationFiles" : [ "/opt/projetos/UAG/UAG-PRD-config.json" ]
+    }, {
+      "name" : "teste",
+      "purpose" : "teste",
+      "projectName" : "samples",
+      "configurationFiles" : [ "C:\\opt\\apache\\hop\\config\\projects\\teste-config.json" ]
     } ],
     "projectLifecycles" : [ ]
   },
