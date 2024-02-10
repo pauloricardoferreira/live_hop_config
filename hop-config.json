@@ -207,9 +207,13 @@
     "name" : "HOP_JSON_INPUT_INCLUDE_NULLS",
     "value" : "N",
     "description" : "Name of the variable to set so that Nulls are considered while parsing JSON files. If HOP_JSON_INPUT_INCLUDE_NULLS is \"Y\" then nulls will be included (default behavior) otherwise they will not be included"
+  }, {
+    "name" : "HOP_CONTEXT_DIALOG_STRICT_SEARCH",
+    "value" : "N",
+    "description" : "This variable influences how the search is done in the context dialog, when set to Y it will do a strict search (Needed for automated UI testing)"
   } ],
   "googleCloud" : {
-    "serviceAccountKeyFile" : "/opt/projetos/hop_repo/TESTES/apache-hop-gdrive-service.json"
+    "serviceAccountKeyFile" : ""
   },
   "LocaleDefault" : "en_US",
   "dropbox" : {
@@ -239,8 +243,8 @@
     "UseDBCache" : "Y",
     "OpenLastFile" : "Y",
     "AutoSave" : "N",
-    "AutoSplit" : "N",
-    "ShowCopyOrDistributeWarning" : "Y",
+    "AutoSplit" : "Y",
+    "ShowCopyOrDistributeWarning" : "N",
     "ShowCanvasGrid" : "N",
     "ShowExitWarning" : "Y",
     "DarkMode" : "N",
@@ -261,28 +265,24 @@
     "FontDefaultStyle" : "0",
     "HideMenuBar" : "Y",
     "ShowTableViewToolbar" : "Y",
-    "ShowOSLook" : "Y",
-    "BackgroundColorR" : "255",
-    "BackgroundColorG" : "255",
-    "BackgroundColorB" : "255",
-    "GraphColorR" : "255",
-    "GraphColorG" : "255",
-    "GraphColorB" : "255",
-    "TabColorR" : "240",
-    "TabColorG" : "240",
-    "TabColorB" : "240"
+    "CustomParameterPivotSortWarning" : "Y",
+    "HideViewport" : "N",
+    "CustomParameterParallelActionsWarning" : "Y",
+    "CustomParameterUniqueSortWarning" : "Y",
+    "CustomParameterChangeSequenceSortWarning" : "Y"
   },
   "googleDrive" : {
-    "credentialsFile" : "/opt/projetos/hop_repo/TESTES/client_secret.json",
-    "tokensFolder" : "/opt/projetos/hop_repo/TESTES/"
+    "credentialsFile" : "",
+    "tokensFolder" : ""
   },
   "projectsConfig" : {
     "enabled" : true,
     "projectMandatory" : false,
     "environmentMandatory" : false,
+    "environmentsForActiveProject" : false,
     "defaultProject" : "default",
     "defaultEnvironment" : "",
-    "standardParentProject" : "",
+    "standardParentProject" : null,
     "standardProjectsFolder" : "/opt/projetos",
     "defaultProjectConfigFile" : "project-config.json",
     "projectConfigurations" : [ {
@@ -310,27 +310,32 @@
       "name" : "hop-repo-prd",
       "purpose" : "Production",
       "projectName" : "hop_repo",
-      "configurationFiles" : [ "/opt/projetos/hop_repo/hop-repo-prd-config.json" ]
+      "configurationFiles" : [ "${PROJECT_HOME}/env/prd/outros.json", "${PROJECT_HOME}/env/prd/database.json", "${PROJECT_HOME}/env/prd/ftp.json", "${PROJECT_HOME}/env/prd/enviar-email.json", "${PROJECT_HOME}/env/prd/gupy.json", "${PROJECT_HOME}/env/prd/fulltime.json" ]
+    }, {
+      "name" : "hop-repo-dev",
+      "purpose" : "Development",
+      "projectName" : "hop_repo",
+      "configurationFiles" : [ "/opt/projetos/hop_repo/hop-repo-dev.json" ]
     }, {
       "name" : "hop-live-prd",
       "purpose" : "Production",
       "projectName" : "live_hop",
-      "configurationFiles" : [ "/opt/projetos/live_hop/hop-live-prd-config.json" ]
+      "configurationFiles" : [ "${PROJECT_HOME}/env/prd/hop-live.json" ]
     }, {
       "name" : "hop-live-dev",
       "purpose" : "Development",
       "projectName" : "live_hop",
-      "configurationFiles" : [ "/opt/projetos/live_hop/hop-live-dev-config.json" ]
+      "configurationFiles" : [ "${PROJECT_HOME}/env/dev/hop-live.json" ]
     }, {
       "name" : "UAG-PRD",
       "purpose" : "Production",
       "projectName" : "UAG",
       "configurationFiles" : [ "/opt/projetos/UAG/UAG-PRD-config.json" ]
     }, {
-      "name" : "teste",
-      "purpose" : "teste",
-      "projectName" : "samples",
-      "configurationFiles" : [ "C:\\opt\\apache\\hop\\config\\projects\\teste-config.json" ]
+      "name" : "dev",
+      "purpose" : "Development",
+      "projectName" : "live_hop",
+      "configurationFiles" : [ "${PROJECT_HOME}/hop-live-dev-config.json" ]
     } ],
     "projectLifecycles" : [ ]
   },
